@@ -8,10 +8,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <fragment
-            android:id="@+id/homeFragment"
+            android:id="@+id/myNavHostFrag"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="com.kauzgana.navapp.fragments.HomeFragment"/>
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/main_navigation"/>
     </LinearLayout>
 
 </layout>
