@@ -10,13 +10,14 @@
         <action
             android:id="@+id/action_homeFragment_to_itemsFragment"
             app:destination="@id/itemsFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/homeFragment" />
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
             app:destination="@id/detailsFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
     </fragment>
     <fragment
         android:id="@+id/itemsFragment"
@@ -26,4 +27,13 @@
         android:id="@+id/detailsFragment"
         android:name="com.kauzgana.navapp.fragments.DetailsFragment"
         android:label="DetailsFragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.kauzgana.navapp.fragments.ContactFragment"
+        android:label="ContactFragment" >
+        <action
+            android:id="@+id/action_contactFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
 </navigation>

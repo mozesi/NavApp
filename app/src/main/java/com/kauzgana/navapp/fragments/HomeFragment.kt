@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)
         }
         bindingObj.itemsButton.setOnClickListener{view:View->
-            view.findNavController().navigate(R.id.action_homeFragment_to_itemsFragment)
+            view.findNavController().navigate(R.id.action_homeFragment_to_contactFragment)
         }
         return bindingObj.root
     }
